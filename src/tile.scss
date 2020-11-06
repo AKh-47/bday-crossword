@@ -1,0 +1,16 @@
+.tile {
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fefefe;
+  transition: 0.2s all;
+}
+
+.selected {
+  border-radius: 25px;
+  font-size: 2rem;
+}
