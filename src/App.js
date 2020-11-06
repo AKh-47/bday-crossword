@@ -16,13 +16,15 @@ initialCrossword.forEach((row, i) => {
 
 function App() {
   const [crossword, setCrossword] = useState(initialCrossword);
-  const [refs, setRefs] = useState();
+  // const [refs, setRefs] = useState();
 
   const [display, setDisplay] = useState("none");
   const [display2, setDisplay2] = useState("block");
 
   useEffect(() => {
-    setRefs(document.querySelectorAll(".tile"));
+    // setRefs(document.querySelectorAll(".tile"));
+
+    setCrossword(initialCrossword);
 
     function message() {
       const message = "happy birthday",
@@ -68,7 +70,7 @@ function App() {
       // Add colours to Letters
       const letterMain = document.querySelectorAll(".message__letterMain");
       letterMain.forEach(function (el) {
-        if (i == colors.length) i = 0;
+        if (i === colors.length) i = 0;
         el.style.color = colors[i];
         i++;
       });
